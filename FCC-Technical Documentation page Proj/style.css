@@ -1,0 +1,156 @@
+body{
+    background: #ffffff;
+    color: #151617;
+    font-family: 'East Sea Dokdo', cursive;
+    /*min-width: 200px;
+    font-size: 2em;
+    line-height: 1.5;*/
+}
+  
+#navbar{
+    position: fixed;
+    min-width: 10%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    font-size: 1.6em;
+    line-height: 1.3;
+    /*background: #b5f09e;*/
+    background: #51bfda;
+    border-right: 2px solid #000;
+    z-index: 2;
+}
+  
+#navbar header{
+    text-align: center;
+    margin: 10px;
+    font-size: 1.5em;
+    border-bottom: 3px solid #000;
+}
+  
+#navbar ul{
+    padding-left: 10%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+  
+#navbar li{
+    list-style: none;
+    position: relative;
+    margin: 0 auto;
+}
+  
+#navbar a{
+    display: block;
+    text-decoration: none;
+    color: #000;
+    transition: text-shadow .3s;
+}
+  
+#navbar a:hover{
+    text-shadow: 0 0 11px #293be3;
+}
+  
+#navbar a:visited{
+    color: #000;
+}
+  
+#main-doc{
+    position: absolute;
+    width: 65%;
+    margin-left: 32%;
+    padding: 10px;
+    font-size: 2em;
+}
+  
+.main-section header{
+    text-align: center;
+    background: #51bfda;
+    border: 2px solid #000;
+    font-size: 2em;
+    padding: 5px;
+}
+  
+.main-section article{
+    margin: 15px;
+    font-size: 0.90em;
+}
+  
+#Introduction div{
+    margin: 0 auto;
+    width: 50%;
+}
+  
+#img-fit{
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+}
+  
+#img-before-after{
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+}
+  
+code{
+    display: block;
+    position: relative;
+    margin: 10px auto;
+    padding: 20px;
+    background: #dddeed;
+    border-radius: 10px;
+    text-align: left;
+    line-height: 2;
+    font-size: 0.90em;
+}
+  
+li span{
+    color: #51bfda;
+    font-weight: bold;
+}
+  
+section a{
+    text-decoration: none;
+    transition: text-shadow .3s;
+}
+  
+section a:hover{
+    text-shadow: 0 0 11px #293be3;
+}
+  
+@media only screen and(max-width: 815px){
+    #navbar{
+      background-color: #51bfda;
+      position: absolute;
+      top: 0;
+      padding: 0;
+      margin: 0;
+      max-height: 275px;
+      z-index: 1;
+      border-bottom: 2px solid #000;
+    }
+    
+    #navbar ul{
+      height: 207px;
+    }
+    
+    #main-doc{
+      position: relative;
+      margin-left: 0px;
+      margin-top: 270px;
+    }
+}
+  
+@media only screen and(max-width: 400px){
+    #main-doc {
+      margin-left: -15px;
+    }
+    
+    code {
+      margin-left: -20px;
+      width: 100%;
+      padding: 15px 45px 15px 10px;
+      min-width: 233px;
+    }
+}

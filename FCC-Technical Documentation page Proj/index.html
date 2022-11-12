@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- NavBar -->
+    <nav id="navbar">
+        <header>HTML, CSS & JavaScript</header>
+        <ul>
+        <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+        <li><a href="#Programming_Language" class="nav-link">Programming Language</a></li>
+        <li><a href="#Programming_in_Web_Development" class="nav-link">Programming in Web Development</a></li>
+        <li><a href="#HTML_CSS_and_JavaScript_Intro" class="nav-link">HTML CSS and JavaScript Intro</a></li>
+        <li><a href="#How_does_HTML_work?" class="nav-link">How does HTML work?</a></li>
+        <li><a href="#HTML_vs_CSS" class="nav-link">HTML vs CSS</a></li>
+        <li><a href="#What_is_JavaScript_used_for?" class="nav-link">What is JavaScript used for?</a></li>
+        <li><a href="#Summery" class="nav-link">Summery</a></li>
+        </ul>
+    </nav>
+  
+    <!-- Main Doc -->
+    <main id="main-doc">
+        <!-- Introduction -->
+        <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <div>
+            <img id="img-intro" src="https://p92.com/binaries/content/gallery/p92website/technologies/htmlcssjs-overview.png" alt="HTML CSS & JS overview"/>
+        </div>
+        <article>
+            <p>To someone who's never coded before, the concept of creating a website from scratch -- layout, design, and all -- can seem really intimidating.</p>
+            <p>But actually, you can do it.</p>
+            <p>Anyone can learn to code, just like anyone can learn a new language. In fact, programming is kind of like speaking a foreign language -- which is exactly why they're called programming languages. Each one has its own rules and syntax that need to be learned step by step.</p>
+            <p>Those rules are ways to tell your computer what to do. More specifically, in web programming, they're ways of telling your browsers what to do.</p>
+            <p>Now let's begin dive in a little about the basics of HTML, CSS, and one of the most common programming languages, JavaScript. But before we begin, we should ask an important question first, what programming languages actually are?.</p>
+        </article>  
+        </section>
+        
+        <!-- Programming Language -->
+        <section class="main-section" id="Programming_Language">
+        <header>Programming Language</header>
+        <article>
+            <p>A programming language is our way of communicating with software. The people who use programming languages are often called programmers or developers. The things we tell software using a programming language could be to make a webpage look a certain way, or to make an object on the page move if the human user takes a certain action.</p>
+        </article>  
+        </section>
+        
+        <!-- Programming in Web Development -->
+        <section class="main-section" id="Programming_in_Web_Development">
+        <header>Programming in Web Development</header>
+        <article>
+            <p>Every page on the web that you visit is built using a sequence of separate instructions, one after another. Your browser (Chrome, Firefox, Safari, and so on) is a big actor in translating code into something we can see on our screens and even interact with. When you open a web page, your browser fetches the HTML and other programming languages involved and interprets it.</p>
+            <p>HTML and CSS are actually not technically programming languages; they're just page structure and style information. But before moving on to JavaScript and other true languages, you need to know the basics of HTML and CSS, as they are on the front end of every web page and application.</p>
+            <p>In the following sections, We'll talk about HTML, CSS, and one of the most common programming languages: JavaScript.</p>
+        </article>  
+        </section>
+        
+        <!-- HTML, CSS & JavaScript Intro -->
+        <section class="main-section" id="HTML_CSS_and_JavaScript_Intro">
+        <header>HTML CSS and JavaScript Intro</header>
+        <div>
+            <img id ="img-fit" src="https://heropy.blog/images/screenshot/html-css-starter/html-css-js-site-screenshot.jpg" alt="HTML CSS & JavaScript"/>
+        </div>
+        <article>  
+            <p>
+            An overview:
+            <ul>
+            <li><span>HTML: </span>provides the <i>basic structure</i> of sites, which is enhanced and modified by other technologies like CSS and JavaScript.</li>
+            <li><span>CSS: </span>is used to control <i>presentation, formatting, and layout.</i></li>
+            <li><span>JavaScript: </span>is used to control the <i>behavior</i> of different elements.</li>
+            </ul>
+        </p>
+            <p>Now, let's go over each one individually to help you understand the roles each plays on a website and how they fit together.</p>
+        </article>
+        </section>
+        
+        <!-- How does HTML work? -->
+        <section class="main-section" id="How_does_HTML_work?">
+        <header>How does HTML work?</header>
+        <article>
+            <p>HTML stands for HyperText Markup Language. "Markup language" means that, rather than using a programming language to perform functions, HTML uses tags to identify different types of content and the purposes they each serve to the webpage.</p>
+            <p>HTML is at the core of every web page, regardless the complexity of a site or number of technologies involved. It's an essential skill for any web professional. It's the starting point for anyone learning how to create content for the web.</p>
+            <p>Every web page is made up of a bunch of these HTML tags denoting each type of content on the page. Each type of content on the page is "wrapped" in, i.e. surrounded by, HTML tags.</p>
+            <p>For example, the words you're reading right now are part of a paragraph. Starting this paragraph with an opening paragraph tag: &lt;p&gt;.</p>
+            <p>Once a tag has been opened, all of the content that follows is assumed to be part of that tag until you "close" the tag. When the paragraph ends, I'd put a closing paragraph tag: &lt;/p&gt;.</p>
+            <p>Here's an example: <code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></p>
+            <p>Using HTML, you can
+            <ul>
+            <li>
+                Add headings.
+                <code>
+                &lt;h1&gt;This is a Heading&lt;/h1&gt;
+                </code>
+            </li>
+            <li>
+                Format paragraphs.
+                <code>
+                &lt;p style=&quot;color: #1ed46f;&quot;&gt;This is a styled paragraph&lt;/p&gt;
+                </code>
+            </li>
+            <li>
+                Control line breaks.
+            </li>
+            <li>
+                Make lists.
+            </li>
+            <li>
+                Emphasize text
+                <code>
+                &lt;em&gt;This is emphasized text&lt;/em&gt;
+                </code>
+            </li>
+            <li>
+                Create special characters.
+            </li>
+            <li>
+                Insert images.
+                <code>
+                &lt;img src=&quot;www.google.com/image_source.jpg&quot; /&gt;
+                </code>
+            </li>
+            <li>
+                Create links.
+            </li>
+            <li>
+                Build tables.
+            </li>
+            <li>
+                Control some styling
+            </li>
+            </ul>
+            And much more.</p>
+            <p>If you want to learn more about HTML, <a href="https://www.w3schools.com/html/" target="_blank">Check this tutorial from W3Schools.</a> Now let's move on to CSS.</p>
+        </article>
+        </section>
+        
+        <!-- HTML vs CSS -->
+        <section class="main-section" id="HTML_vs_CSS">
+        <header>HTML vs CSS</header>
+        <article>
+            <p>CSS stands for Cascading Style Sheets. This programming language dictates how the HTML elements of a website should actually appear on the frontend of the page.</p>
+            <p>The difference between HTML & CSS is that, HTML provides the raw tools needed to structure content on a website. CSS, on the other hand, helps to style this content so it appears to the user the way it was intended to be seen.</p>
+            <p>If HTML is the drywall, CSS is the paint. Whereas HTML was the basic structure of your website, CSS is what gives your entire website its style.</p>
+            <p>
+            To show you what CSS does to a website, look at the following image to understand.
+            <div>
+            <img id="img-before-after" src="https://raw.githubusercontent.com/MakeSchool-Tutorials/sa-2018-landing-page/master/P03-Stylin-With-CSS/assets/before_after_css_zen.jpg" alt="Before CSS"/>
+            </div>
+        </p>
+            <p>CSS is a list of rules that can assign different properties to HTML tags, either specified to single tags, multiple tags, an entire document, or multiple documents.</p>
+            <p>
+            Here is an example of external CSS applied on a paragraph element.
+            <code>
+            p{<br/>
+                color: #1ed300;<br/>
+                font-size: 30px;<br/>
+            }
+            </code>
+        </p>
+            <p>If you wish to learn more about CSS, <a href="https://www.w3schools.com/css/" target="_blank">Check this W3Schools CSS tutorial.</a></p>
+        </article>
+        </section>
+        
+        <!-- What is JavaScript used for? -->
+        <section class="main-section" id="What_is_JavaScript_used_for?">
+        <header>What is JavaScript used for?</header>
+        <article>
+            <p>JavaScript is a more complicated language than HTML or CSS. JavaScript is supported by all modern web browsers and is used on almost every site on the web for more powerful and complex functionality.</p>
+            <p>JavaScript is a logic-based programming language that can be used to modify website content and make it behave in different ways in response to a user's actions. Common uses for JavaScript include confirmation boxes, calls-to-action, and adding new identities to existing information.</p>
+            <p>In short, JavaScript is a programming language that lets web developers design interactive sites. Most of the dynamic behavior you'll see on a web page is thanks to JavaScript, which augments a browser's default controls and behaviors.</p>
+            <p>
+            Here is an example if you want to get fancy, you can re-write a paragraph when the user clicks it with some JavaScript.
+            <code>
+            <em>var</em> p = document.getElementById(&apos;some-paragraph&apos;);<br/>
+            p.addEventListener(&apos;click&apos;, <em>function</em>(event) {<br/>
+            &nbsp;&nbsp;p.innerHTML = &apos;You clicked it!&apos;;<br/>
+            });
+            </code>
+        </p>
+            <p>Last but not least, To know more about JavaScript <a href="https://www.w3schools.com/js/DEFAULT.asp" target="_blank">check this W3Schools JavaScript tutorial</a></p>
+        </article>
+        </section>
+        
+        <!-- Summery -->
+        <section class="main-section" id="Summery">
+        <header>Summery</header>
+        <article>
+            <p>As you can see, HTML, CSS, and JavaScript are totally different languages, but they all refer to one another in some way. Most websites rely on all three, but the appearance of every website is determined by HTML and CSS.</p>
+        </article>
+        </section>
+    </main>
+</body>
+</html>

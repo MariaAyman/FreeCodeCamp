@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->  
+        <header>
+            <h1 id="title">Social Media Survey</h1>
+            <p id="description">A Short survey about Social Media and how often do we use them</p>
+        </header>
+        
+        <!-- Form -->  
+        <form id="survey-form">
+            <!-- Name -->
+            <div class="form-group">
+              <label id="name-label" for="name">Name</label>
+              <input type="text" name="name" id="name" class="form-control" placeholder="Ex.John Doe" required/>
+            </div>
+            
+            <!-- Email-->
+            <div class="form-group">
+              <label id="email-label" for="email">Email</label>
+              <input type="email" name="email" id="email" class="form-control" placeholder="Ex.john.doe@example.com" required/>
+            </div>
+            
+            <!-- Age -->
+            <div class="form-group">
+              <label id="number-label" for="age">Age</label>
+              <input type="number" name="age" id="number" class="form-control" min="10" max="100" placeholder="Ex.25" required/>
+            </div>
+            
+            <!-- Gender -->
+            <div class="form-group">
+              <p>Gender</p>
+              <label>
+                <input name="gender" value="male" type="radio" class="input-radio" checked/>
+                Male
+              </label>
+              <label>
+                <input name="gender" value="female" type="radio" class="input-radio"/>
+                Female
+              </label>
+            </div>
+            
+            <!-- Highest Degree-->
+            <div class="form-group">
+              <p>Highest Degree?</p>
+              <select id="dropdown" name="degree" class="form-control" required>
+                <option disabled selected value>Select an option</option> 
+                <option value="highschoolgrad">High School Grad or less</option>
+                <option value="college">Some College</option>
+                <option value="morethancollege">College+</option>
+              </select>
+            </div>  
+              
+            <!-- Social Number -->
+            <div class="form-group">
+              <p>How many social media sites do you have accounts with?</p>
+              <label>
+                <input name="sites-number" value="one" type="radio" class="input-radio" checked/>
+                One
+              </label>
+              <label>
+                <input name="sites-number" value="two" type="radio" class="input-radio"/>
+                Two
+              </label>
+              <label>
+                <input name="sites-number" value="three" type="radio" class="input-radio"/>
+                Three
+              </label>
+              <label>
+                <input name="sites-number" value="four" type="radio" class="input-radio"/>
+                Four
+              </label>
+              <label>
+                <input name="sites-number" value="five" type="radio" class="input-radio"/>
+                Five
+              </label>
+              <label>
+                <input name="sites-number" value="morethanfive" type="radio" class="input-radio"/>
+                More than Five
+              </label>
+            </div>
+            
+            <!-- Social Check -->
+            <div class="form-group">
+              <p>How many times a day do you check social media?</p>
+              <label>
+                <input name="sites-check" value="once" type="radio" class="input-radio" checked/>
+                Once a Day
+              </label>
+              <label>
+                <input name="sites-check" value="twotofive" type="radio" class="input-radio"/>
+                2-5 times a Day
+              </label>
+              <label>
+                <input name="sites-check" value="fivetoten" type="radio" class="input-radio"/>
+                5-10 times a Day
+              </label>
+              <label>
+                <input name="sites-check" value="morethanten" type="radio" class="input-radio"/>
+                10+ times a Day
+              </label>
+            </div>
+              
+            <!-- Social Time -->
+            <div class="form-group">
+              <p>How much time do you spend on social media per day?</p>
+              <label>
+                <input name="sites-time" value="lessthanthirty" type="radio" class="input-radio" checked/>
+                Less than 30 minutes
+              </label>
+              <label>
+                <input name="sites-time" value="thirtytosixty" type="radio" class="input-radio"/>
+                30-60 minutes
+              </label>
+              <label>
+                <input name="sites-time" value="onetotwohours" type="radio" class="input-radio"/>
+                1-2 hours
+              </label>
+              <label>
+                <input name="sites-time" value="twotothreehours" type="radio" class="input-radio"/>
+                2-3 hours
+              </label>
+              <label>
+                <input name="sites-time" value="morethanthreehours" type="radio" class="input-radio"/>
+                3+ hours
+              </label>
+            </div>
+              
+            <!-- Social Post -->
+            <div class="form-group">
+              <p>How often do you post on social media?</p>
+              <label>
+                <input name="sites-post" value="never" type="radio" class="input-radio" checked/>
+                Never
+              </label>
+              <label>
+                <input name="sites-post" value="everyfewweeks" type="radio" class="input-radio"/>
+                Every few Weeks
+              </label>
+              <label>
+                <input name="sites-post" value="everyfewmonths" type="radio" class="input-radio"/>
+                Every few Months
+              </label>
+              <label>
+                <input name="sites-post" value="weekly" type="radio" class="input-radio"/>
+                Weekly
+              </label>
+              <label>
+                <input name="sites-post" value="daily" type="radio" class="input-radio"/>
+                Daily
+              </label>
+              <label>
+                <input name="sites-post" value="multitimeaday" type="radio" class="input-radio"/>
+                Multiple times a day
+              </label>
+            </div>
+              
+            <!-- Social Access -->
+            <div class="form-group">
+              <p>When do you access social media? <span class="clue">(Check all that apply)</span></p>
+              <label>
+                <input name="sites-access" value="freetime" type="checkbox" class="input-checkbox"/>
+                During Free Time
+              </label>
+              <label>
+                <input name="sites-access" value="school/work" type="checkbox" class="input-checkbox"/>
+                At School/Work 
+              </label>
+              <label>
+                <input name="sites-access" value="socialoccasions" type="checkbox" class="input-checkbox"/>
+                During Social Occasions
+              </label>
+              <label>
+                <input name="sites-access" value="mealtime" type="checkbox" class="input-checkbox"/>
+                During Meal Times
+              </label>
+              <label>
+                <input name="sites-access" value="sparemoments" type="checkbox" class="input-checkbox"/>
+                Whenever I can
+              </label>
+            </div>
+              
+            <!-- Social Use -->
+            <div class="form-group">
+              <p>What do you use social media for? <span class="clue">(Check all that apply)</span></p>
+              <label>
+                <input name="sites-use" value="friends&family" type="checkbox" class="input-checkbox"/>
+                Keep in touch with friends and family
+              </label>
+              <label>
+                <input name="sites-use" value="planning" type="checkbox" class="input-checkbox"/>
+                Event Planning
+              </label>
+              <label>
+                <input name="sites-use" value="business" type="checkbox" class="input-checkbox"/>
+                Business (Buying & Selling)
+              </label>
+              <label>
+                <input name="sites-use" value="news" type="checkbox" class="input-checkbox"/>
+                News
+              </label>
+              <label>
+                <input name="sites-use" value="dating" type="checkbox" class="input-checkbox"/>
+                Dating
+              </label>
+              <label>
+                <input name="sites-use" value="newfriends" type="checkbox" class="input-checkbox"/>
+                Find new Friends
+              </label>
+              <label>
+                <input name="sites-use" value="employment" type="checkbox" class="input-checkbox"/>
+                For Employment
+              </label>
+              <label>
+                <input name="sites-use" value="browse" type="checkbox" class="input-checkbox"/>
+                Time Waste/to Browse
+              </label>
+            </div> 
+            
+            <!-- Social before get out of bed-->
+            <div class="form-group">
+              <p>Do you check social media before you get out of bed?</p>
+              <label>
+                <input name="sites-wake" value="yes" type="radio" class="input-radio" checked/>
+                Yes
+              </label>
+              <label>
+                <input name="sites-wake" value="no" type="radio" class="input-radio"/>
+                No
+              </label>
+            </div>  
+              
+            <!-- Social before Bed--> 
+            <div class="form-group">
+              <p>Do you check social Media before bed?</p>
+              <label>
+                <input name="sites-bed" value="yes" type="radio" class="input-radio" checked/>
+                Yes
+              </label>
+              <label>
+                <input name="sites-bed" value="no" type="radio" class="input-radio"/>
+                No
+              </label>
+            </div> 
+              
+            <!-- Social Effect -->
+            <div class="form-group">
+              <p>Has social media effected a relationship? (Friend/Family/Romantic)</p>
+              <label>
+                <input name="sites-effect" value="yes" type="radio" class="input-radio" checked/>
+                Yes
+              </label>
+              <label>
+                <input name="sites-effect" value="no" type="radio" class="input-radio"/>
+                No
+              </label>
+            </div>
+              
+            <!-- Social Addict -->
+            <div class="form-group">
+              <p>Do you consider yourself a social addict?</p>
+              <label>
+                <input name="sites-addict" value="yes" type="radio" class="input-radio" checked/>
+                Yes
+              </label>
+              <label>
+                <input name="sites-addict" value="no" type="radio" class="input-radio"/>
+                No
+              </label>
+            </div>
+              
+            <!-- Comments -->
+            <div class="form-group">
+              <p>Do you have any additional comment/opinion about social media?</p>
+              <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comments/opinions here..."></textarea>
+            </div> 
+              
+            <!-- Submit -->
+            <div class="form-group">
+              <button type="submit" id="submit" class="submit-button">Submit my Survey</button>
+            </div>  
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,135 @@
+body{
+    min-height: 2000px;
+    background: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e6f9a7b2-3a2f-431d-94dd-d669d58105b4/d518yih-e75034ee-a8f9-43c6-a597-a8d700070531.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvZTZmOWE3YjItM2EyZi00MzFkLTk0ZGQtZDY2OWQ1ODEwNWI0XC9kNTE4eWloLWU3NTAzNGVlLWE4ZjktNDNjNi1hNTk3LWE4ZDcwMDA3MDUzMS5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.Bg-M4daxpgv22NQaOzbSXbAvX8xf6B70YIv7ux0zvo8') no-repeat fixed center;
+    font-family:'Supernatural Knight', sans-serif;
+}
+
+#logo{
+    margin: 100px auto;
+}
+
+#title{
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 4em;
+}
+
+#tag{
+    margin: 0 auto;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.divider{
+    display: block;
+    margin: 50px auto 50px auto;
+    width: 50%;
+}
+
+#img-div{
+    background: rgba(245, 240, 240, 0.4);
+    border-radius: 10px;
+    padding: 3%;
+    margin: 10px auto;
+}
+
+#image{
+    display: block;
+    max-width: 80%;
+    height: auto;
+    margin: 10px auto;
+}
+
+#img-caption{
+    text-align: center;
+    margin: 10px auto 30px;
+    width: 400px;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#tribute-info{
+    text-align: left;
+    margin: 0 auto;
+    font-size: 1.4em;
+    line-height: 40px;
+    font-weight: bold;
+    background: rgba(245, 240, 240, 0.4);
+    border-radius: 10px;
+    padding: 3%;
+}
+
+#box{
+    display: flex;
+    justify-content: space-between;
+    max-width: 75rem;
+    margin: 10px auto;
+}
+
+#cast{
+    background: rgba(245, 240, 240, 0.4);
+    border-radius: 10px;
+    padding: 3%;
+    width: 100%;
+    max-width: 420px;
+}
+
+#characters{
+    background: rgba(245, 240, 240, 0.4);
+    border-radius: 10px;
+    padding: 3%;
+    width: 100%;
+    max-width: 420px;
+}
+
+ul{
+    list-style-type: none;
+    line-height: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+li img{
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+}
+
+li a{
+    color: #000;
+    text-decoration: none;
+}
+
+li a:visited{
+    color: #000;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+#linkForMore{
+    text-align: center;
+    margin: 10px auto;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+a {
+    color: #de1414;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #7d0909;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: underline;
+}

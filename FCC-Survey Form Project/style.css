@@ -1,0 +1,137 @@
+body{
+    min-height: 2000px;
+    font-family: 'Nerko One', cursive;
+    background: url('https://cdn.hipwallpaper.com/i/6/86/CTajQ6.jpg') no-repeat fixed center;
+    color: #fff;
+}
+  
+.container{
+    width: 100%;
+    margin: 3em auto 0 auto;
+}
+  
+/*Header*/
+header{
+    margin: 50px auto;
+}
+  
+#title{
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 5em;
+}
+  
+#description{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2em;
+    padding-top: 10px;
+}
+  
+/*From*/
+form{
+    background: rgba(3, 24, 92, 0.5);
+    border-radius: 30px;
+    padding: 3%;
+    margin: 0 5%;
+    position: relative;
+}
+  
+.form-group{
+    margin: 20px auto;
+    padding: 10px;
+}
+  
+#name-label, 
+#email-label,
+#number-label,
+.form-group p{
+    font-size: 40px;
+    margin: 10px auto;
+    display: block;
+    line-height: 30px;
+}
+  
+#dropdown{
+    height: 60px;
+}
+  
+.form-control{
+    display: block;
+    width: 95%;
+    height: 40px;
+    padding: 2%;
+    line-height: 10px;
+    color: #0d4985;
+    font-size: 1em;
+    font-family: 'Nerko One', cursive;
+    border: 3px solid #000;
+    border-radius: 30px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+  
+.form-control:focus{
+    border-color: #1f9993;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    outline: 0;
+}
+  
+label{
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+}
+  
+.input-radio,
+.input-checkbox{
+    display: inline-block;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+}
+  
+.input-textarea{
+    width: 95%;
+    height: 100px;
+    padding: 2%;
+    line-height: 10px;
+    color: #0d4985;
+    font-size: 1em;
+    font-family: 'Nerko One', cursive;
+    border: 3px solid #000;
+    border-radius: 30px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+  
+.input-textarea:focus{
+    border-color: #1f9993;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    outline: 0;
+}
+  
+.submit-button{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding: 2%;
+    background-color: #539ffc;
+    color: #fff;
+    font-size: 2em;
+    font-family: 'Nerko One', cursive;
+    border: 3px solid #000;
+    border-radius: 30px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.submit-button:hover{
+    cursor: pointer;
+    border-color: #1f9993;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    outline: 0;
+}
+  
+.clue{
+    font-size: 0.5em;
+    color: #e4e4e4;
+}
+  
+  

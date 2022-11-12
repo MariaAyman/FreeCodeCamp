@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Frijole&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header fixed bar -->
+    <header id="header">
+        <!-- Logo -->
+        <div id="logo">
+        <img id="header-img" src="https://image.flaticon.com/icons/png/512/40/40739.png" alt="logo"/>
+        </div>
+        <!-- Nav -->
+        <nav id="nav-bar">
+        <ul>
+            <li><a class="nav-link" href="#features">Features</a></li>
+            <li><a class="nav-link" href="#use">How to use?</a></li>
+            <li><a class="nav-link" href="#prices">Prices</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <div class="container"></div>
+    <!-- Site Header -->
+    <div id="site-header">
+    <p>Creightons</p>
+    <h1><span>FRIZZ</span> No More</h1>
+    <p>Super Smooth & Colour Kind</p>
+    </div>
+
+    <!-- Container -->
+    <div class="container">
+    <!-- #features -->
+    <section id="features">
+        <div class="flex">
+        <div class="icon">
+            <i class="far fa-hand-point-down"></i>
+        </div>
+        <div class="description">
+            <h2>Our Product</h2>
+            <p>The ultimate solution for perfectly manageable, frizz free, super smooth hair. Professionally formulated with the unique frizz fighting Envirolock Complex, which helps to defend against troublesome humidity. Hair is left controlled no matter what the weather!</p>
+        </div>
+        </div>
+        <div class="flex">
+        <div class="icon">
+            <i class="fas fa-shipping-fast"></i>
+        </div>
+        <div class="description">
+            <h2>Fast Shipping</h2>
+            <p>Making sure you recieve your product as soon possible. We also provide free returns if you are not satisfied.</p>
+        </div>
+        </div>
+        <div class="flex">
+        <div class="icon">
+            <i class="fas fa-check-square"></i>
+        </div>
+        <div class="description">
+            <h2>Quality Check</h2>
+            <p>For every purchase you make, we will ensure there are no damages or faults in our product for safe use.</p>
+        </div>
+        </div>
+    </section>
+    
+    <!-- #use -->
+    <section id="use">
+        <h2>Review</h2>
+        <iframe id="video"  width="420" height="315"
+    src="https://www.youtube.com/embed/PKMLPZtUkfc" allowfullscreen></iframe>
+    </section>
+    
+    <!-- #prices -->
+    <section id="prices">
+        <!-- Serum price -->
+        <div class="product" id="serum">
+        <div class="level">Sleek & Shine Miracle Serum</div>
+        <div class="product-img">
+            <img src="https://www.creightons.com/Images/Models/Full/1499.Jpg" alt="Serum Product"/>
+        </div>
+        <h2>$2.65</h2>
+        <ol>
+            <li>
+            Frizz No More Sleek & Shine Serum reduces frizz to leave the hair silky soft and smooth.
+            </li>
+            <li>
+            With moisturizing Meadow foam and natural Argon Oil, the conditioning formula adds glossy shine.
+            </li>
+            <li>
+            The color-kind formula is suitable for all hair types.
+            </li>
+        </ol>
+        </div>
+        <!-- Shampoo price -->
+        <div class="product" id="shampoo">
+        <div class="level">Shampoo & Conditioner</div>
+        <div class="product-img">
+            <img src="https://www.creightons.com/Images/Models/Full/1717.Jpg" alt="Shampoo & Conditioner Product"/>
+        </div>
+        <h2>$9.30</h2>
+        <ol>
+            <li>
+            No more fully frizz tame Shampoo & Conditioner Set
+            </li>
+            <li>
+            Super smooth & colour kind
+            </li>
+            <li>
+            Protects against humidity
+            </li>
+        </ol>
+        </div>
+        <!-- Bundle price -->
+        <div class="product" id="bundle">
+        <div class="level">Frizz no more Bundle</div>
+        <div class="product-img">
+            <img src="https://www.creightons.com/Images/Models/Full/2061.Jpg" alt="Frizz no more bundle"/>
+        </div>
+        <h2>$6.37</h2>
+        <ol>
+            <li>Frizz No More Totally Tame Shampoo 250ml</li>
+            <li>Frizz No More Totally Tame Conditioner 250ml</li>
+            <li>Frizz No More Hold & Moisture Activator Cream</li>
+            <li>Frizz No More Sleek & Shine Serum</li>
+        </ol>
+        </div>
+    </section>
+    
+    <!-- Submit -->
+    <section id="email-submit">
+        <h2>Join our mailing list</h2>
+        <p>Be first to hear about our new product arrivals, offers and latest news.</p>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input id=email name="email" type="email" placeholder="Enter your email...."/>
+        <input id="submit" type="submit" value="Join Now" class="button"/>
+        </form>
+    </section>
+    </div>
+</body>
+</html>

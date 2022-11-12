@@ -1,0 +1,240 @@
+/*main colors*/
+:root{
+    --nav-orange: #f5a80f;
+    --nav-grey: #9e9b95;
+    --body-gray: #4f4d4a;
+}
+  
+body{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Chewy', cursive;
+    font-size: 1.9em;
+    font-weight: 400;
+    line-height: 1.5;
+}
+  
+ul{
+    list-style: none;
+}
+  
+#navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    z-index: 2;
+    background: var(--nav-orange);
+}
+  
+#nav-list{
+    display: flex;
+    margin: 1.3rem;
+}
+  
+@media (max-width: 28.75em){
+    #navbar{
+      justify-content: center;
+    }
+    
+    #nav-list{
+      margin: 0 1rem;
+    }
+}
+  
+#nav-list a{
+    display: block;
+    padding: 1.3rem;
+    font-size: 2rem;
+    color: var(--nav-grey);
+    text-decoration: none;
+    transition: text-shadow .3s;
+}
+  
+#nav-list a:hover{
+    text-shadow: 0 0 11px #ebe7e1;
+}
+  
+#welcome-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: var(--nav-grey);
+}
+  
+#welcome-section h1{
+    font-family: 'Rock Salt', cursive;
+    margin: 1em auto;
+    padding-top: 1.5em;
+    font-size: 2em;
+    text-align: center;
+}
+  
+#welcome-section p{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid var(--nav-orange); /*Cursor*/
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto;
+    letter-spacing: .12em;
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+}
+  
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 45% }
+}
+  
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--nav-orange); }
+}
+  
+img{
+    display: block;
+    width: 100%;
+}
+  
+#projects{
+    background: var(--body-gray);
+    text-align: center;
+    padding: 10rem 2rem;
+}
+  
+#projects-header{
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.5rem solid var(--nav-orange);
+}
+  
+@media (max-width: 28.75em) {
+    #projects-header {
+      font-size: 4rem;
+    }
+}
+  
+.projects-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+  
+@media (max-width: 30.625em) {
+    #projects {
+      padding: 6rem 1rem;
+    }
+  
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+}
+  
+.project-tile{
+    background: var(--nav-orange);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    font-size: 2rem;
+    padding: 2rem 0.5rem;
+    text-decoration: none;
+    color: var(--nav-grey);
+    /*width: 50%;*/
+    transition: all .2s ease-in-out;
+}
+  
+.project-tile:hover{
+    transform: scale(1.1);
+}
+  
+.project-img{
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+}
+  
+.code{
+    color: var(--nav-orange);
+    transition: color 0.3s ease-out;
+}
+  
+.project-tile:hover .code{
+    color: var(--nav-grey);
+}
+  
+.btn{
+    display: inline-block;
+    border-radius: 5px;
+    padding: 1em 2em;
+    text-decoration: none;
+    color: var(--nav-grey);
+}
+  
+.btn-show-all{
+    background: var(--body-gray);
+    font-size: 2.5rem;
+    transition: 
+      background .3s ease-out,
+      all .3s ease-in-out;
+}
+  
+.btn-show-all:hover{
+    background: var(--nav-orange);
+    transform: scale(1.1);
+}
+  
+.fa-chevron-right{
+    color: var(--body-gray);
+    transition: color .3s ease-out;
+}
+  
+.btn-show-all:hover .fa-chevron-right{
+    color: var(--nav-grey);
+}
+  
+#contact{
+    background: var(--nav-grey);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    padding: 2.2rem 2rem 1rem 2rem;
+}
+  
+.contact-header{
+    margin-top: 3rem;
+    margin-bottom: 0;
+}
+  
+.contact-links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+  
+.contact-details{
+    color: var(--nav-orange);
+    font-size: 2rem;
+    /*text-shadow: 2px 2px 1px #de980d;*/
+    margin: 0 auto;
+    transition: transform .3s ease-in-out;
+}
+  
+.contact-details:hover{
+    transform: scale(2);
+}

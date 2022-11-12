@@ -1,0 +1,222 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans', sans-serif;
+    background-color: #1abbb5;
+}
+  
+#header{
+    background-color: #ec1b90;
+    position: fixed;
+    display: flex;
+    top: 0;
+    min-height: 130px;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: space-between; 
+    align-items: center;
+}
+  
+@media (max-width: 600px){
+    #header{
+      flex-wrap: wrap;
+    }
+}
+  
+#logo{
+    width: 115px;
+    height: 125px;
+    margin-left: 20px;
+}
+  
+#header-img{
+    margin-left: 10px;
+    width: 100%;
+    height: 100%;
+}
+  
+li{
+    list-style: none;
+}
+  
+a{
+    font-size: 30px;
+    text-decoration: none;
+    color: #f3f3f4;
+}
+  
+header ul{
+    display: flex;
+    margin-right: 10px;
+    line-height: 50px;
+}
+  
+header li a{
+    margin-right: 50px;
+    padding: 10px;
+    transition: text-shadow .3s;
+}
+  
+header li a:hover{
+    text-shadow: 0 0 11px #1abbb5;
+}
+  
+#site-header{
+    margin: 130px auto 0 auto;
+    /*background: #f3f3f4;*/
+    text-align: center;
+}
+  
+#site-header p{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px;
+}
+  
+#site-header h1{
+    color: #ec1b90;
+    font-size: 60px;
+    font-family: 'Anton' sans-serif;
+    margin: 3px auto;
+}
+  
+#site-header h1 span{
+    color: #f3f3f4;
+    font-family: 'Frijole', cursive;
+}
+  
+section{
+    background-color: rgba(243, 243, 244, 0.6);
+    margin: 30px 30px;
+    padding: 20px;
+    /*text-align: center;*/
+}
+  
+#features{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: none;
+}
+  
+.flex{
+    /*border: 1px solid #1abbb5;*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    height: 300px;
+    padding: 10px;
+    background-color: rgba(243, 243, 244, 0.6);
+}
+  
+.icon{
+    font-size: 4em;
+    color: #ec1b90;
+}
+  
+.description h2{
+    text-align: center;
+}
+  
+#use{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+#use h2{
+    font-family: 'Frijole', cursive;
+    font-size: 2em;
+}
+  
+#prices{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: none;
+}
+  
+.product{
+    /*border: 1px solid #1abbb5;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 30%;
+    height: 700px;
+    padding: 10px;
+    background-color: rgba(243, 243, 244, 0.6);
+}
+  
+.level{
+    font-size: 2em;
+    text-align: center;
+    color: #ec1b90;
+    margin: 5px;
+    /*border: 1px solid #000;*/
+}
+  
+.product-img img{
+    width: 150px;
+    height: 200px;
+    margin: 20px auto 10px auto;
+}
+  
+.product li{
+    line-height: 30px;
+    list-style: disc;
+}
+  
+.product h2, #email-submit h2{
+    font-family: 'Frijole', cursive;
+    color: #ec1b90;
+}
+  
+#email-submit{
+    text-align: center;
+}
+  
+#email{
+    display: block;
+    align-items: center;
+    width: 50%;
+    height: 20px;
+    padding: 2%;
+    color: #ec1b90;
+    font-size: 1em;
+    font-family: 'Frijole', cursive;
+    margin: 0 auto 5px auto;
+    border: 3px solid #000;
+    border-radius: 30px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+  
+#email:focus{
+    border-color: #1abbb5;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    outline: 0;
+}
+  
+#submit{
+    display: block;
+    width: 20%;
+    margin: 0 auto;
+    padding: 2%;
+    background-color: #ec1b90;
+    color: #fff;
+    font-family: 'Frijole', cursive;
+    font-size: 1em;
+    border: 3px solid #000;
+    border-radius: 30px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+  
+#submit:hover{
+    cursor: pointer;
+    border-color: #1abbb5;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    outline: 0;
+}
