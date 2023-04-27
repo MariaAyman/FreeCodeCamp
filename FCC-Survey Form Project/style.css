@@ -1,7 +1,9 @@
 body{
     min-height: 2000px;
     font-family: 'Nerko One', cursive;
-    background: url('https://cdn.hipwallpaper.com/i/6/86/CTajQ6.jpg') no-repeat fixed center;
+    /*background: url('https://cdn.hipwallpaper.com/i/6/86/CTajQ6.jpg') no-repeat fixed center;*/
+    background: url('https://img.freepik.com/free-vector/blue-social-media-background_1017-7008.jpg?w=740&t=st=1682606810~exp=1682607410~hmac=a9bad5f875e4ecbad694fbd680e71564040a4b02aae01c05b5cd681365a0135c') no-repeat fixed center;
+    background-size: cover;
     color: #fff;
 }
   
